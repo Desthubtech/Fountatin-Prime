@@ -225,6 +225,10 @@ p {
         opacity: 0;
     }
 
+    .hero h1{
+        font-size: smaller;
+    }
+
     .hero button {
         width: 50%;
     }
