@@ -359,6 +359,7 @@ p {
 
 /* Footer */
 footer {
+    font-size: smaller;
     text-align: center;
     padding: 20px;
     background-color: #e8d48b;
