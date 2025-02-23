@@ -135,7 +135,7 @@ p {
 }
 
 .hero button {
-    width: 50%;
+    width: 20%;
     padding: 10px 0;
     font-weight: bold;
     background-color: #039dfc;
@@ -223,6 +223,10 @@ p {
 
     .nav-links li {
         opacity: 0;
+    }
+
+    .hero button {
+        width: 50%;
     }
 
     .burger {
