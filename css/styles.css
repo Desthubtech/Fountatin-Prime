@@ -319,6 +319,23 @@ p {
         border-radius: 5px;
         border-color: #fc037b;
     }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        
+    }
+
+    footer {
+        font-size: smaller;
+        text-align: center;
+        padding: 20px;
+        background-color: #e8d48b;
+        color: #fc037b;
+    }
     
 }
 
@@ -329,14 +346,9 @@ p {
     background-color: #f4f4f4;
 }
 
-.hero h1 {
-    font-size: 1.5rem;
-}
 
-.hero p {
-    font-size: 0.9rem;
-    
-}
+
+
 
 /* Content Sections */
 .content-section {
@@ -358,10 +370,3 @@ p {
 }
 
 /* Footer */
-footer {
-    font-size: smaller;
-    text-align: center;
-    padding: 20px;
-    background-color: #e8d48b;
-    color: #fc037b;
-}
