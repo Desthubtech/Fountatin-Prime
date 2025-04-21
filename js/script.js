@@ -8,6 +8,9 @@ burger.addEventListener('click', () => {
 function showMessage() {
     alert('Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nemo sint magnam dolor quasi libero, incidunt esse, nisi earum rerum odio? Laudantium in, neque perferendis, fugiat placeat minima omnis est at aliquam quaerat amet corporis voluptatem officia suscipit velit molestiae accusantium! Dolorem saepe enim ab est dolorum atque soluta voluptatem!');
 }
+function showMarketInfo() {
+    alert('Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nemo sint magnam dolor quasi libero, incidunt esse, nisi earum rerum odio? Laudantium in, neque perferendis, fugiat placeat minima omnis est at aliquam quaerat amet corporis voluptatem officia suscipit velit molestiae accusantium! Dolorem saepe enim ab est dolorum atque soluta voluptatem!');
+}
 
 function toggleFAQ(element) {
     let answer = element.nextElementSibling;

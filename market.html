@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fountain Prime School</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/fountainprime-logo.png" alt="School Logo" />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="/">Market Place</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <h1>Welcome to Fountain Prime Market Place</h1>
+      <button onclick="showMarketInfo()">Newsletter</button>
+    </section>
+
+    <!-- Main content area -->
+    <main>
+      <!-- Featured Products Section -->
+      <section class="products">
+        <div class="container">
+          <h2>Featured Products</h2>
+          <div class="product-grid">
+            <!-- Repeat this .product-card for each product -->
+            <article class="product-card">
+              <img
+                src="https://www.manorschool.northants.sch.uk/images/manorimages/inpage/Uniform2021.jpg"
+                alt="Product Name"
+              />
+              <h3>School Uniform</h3>
+              <p class="price">#20,000</p>
+              <a href="https://wa.me/+2348146711110" class="add-to-cart"
+                >Buy Now</a
+              >
+            </article>
+            <article class="product-card">
+              <img
+                src="https://www.nationwideschooluniforms.co.uk/media/catalog/product/cache/ba271a5d3ea08bc84c26dd54c762a5cf/s/o/sos_white_sock.png"
+                alt="Product Name"
+              />
+              <h3>Socks</h3>
+              <p class="price">#20,000</p>
+              <a href="https://wa.me/+2348146711110" class="add-to-cart"
+                >Buy Now</a
+              >
+            </article>
+            <article class="product-card">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:900/1*AQ2Sm9PbZ31L5y7hGr_sFA.jpeg"
+                alt="Product Name"
+              />
+              <h3>Textbooks</h3>
+              <p class="price">#20,000</p>
+              <a href="https://wa.me/+2348146711110" class="add-to-cart"
+                >Buy Now</a
+              >
+            </article>
+            <article class="product-card">
+              <img
+                src="https://m.media-amazon.com/images/I/71E181iSlLL._AC_UF1000,1000_QL80_.jpg"
+                alt="Product Name"
+              />
+              <h3>Notebooks</h3>
+              <p class="price">#20,000</p>
+              <a href="https://wa.me/+2348146711110" class="add-to-cart"
+                >Buy Now</a
+              >
+            </article>
+            <!-- End product-card -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <div>
+          <label for="name">Full Name</label>
+        </div>
+        <div>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+        </div>
+        <div>
+          <textarea id="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Our School. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
