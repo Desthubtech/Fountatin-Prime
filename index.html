@@ -15,11 +15,11 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li>
-            <a href="https://app.fountainprimeschool.com.ng/teacher.html"
+            <a href="https://results.fountainprimeschool.com.ng/teacher.php"
               >Login</a
             >
           </li>
-          <li><a href="#results">Results</a></li>
+          <li><a href="https://results.fountainprimeschool.com.ng/student.php">Results</a></li>
           <li>
             <a href="https://fountainprimeschool.com.ng/market.html"
               >Market Place</a
@@ -40,6 +40,30 @@
       <p>Empowering Minds, Transforming Futures</p>
       <button onclick="showMessage()">Newsletter</button>
     </section>
+    
+    <div class="admission">
+      <h2>Admission In Progress</h2>
+      <p>
+        We are excited to announce that admissions for the 2025/2026 academic
+        session are now open! At Fountain Prime Schools, we are committed to
+        providing a nurturing and stimulating environment where students can
+        thrive academically, socially, and personally. <br />
+        Our dedicated team of educators is passionate about fostering a love for
+        learning and helping each student reach their full potential. We offer a
+        comprehensive curriculum that combines academic excellence with
+        extracurricular activities to ensure a well-rounded education. <br />
+        Whether you are looking for a safe and supportive environment for your
+        little one in our nursery or seeking a challenging and enriching
+        experience for your older child in our primary and secondary levels,
+        Fountain Prime Schools is the perfect choice. <br />
+        Join us on this exciting journey of growth and discovery. Apply now to
+        secure your child's place at Fountain Prime Schools and be part of a
+        community that values education, creativity, and character development. <br />
+        click here
+        <a
+          href="https://fountainprimeschool.com.ng/admission/student.html"
+          >here</a> to apply.
+    </div>
 
     <h2>What You Need To Know</h2>
     <section class="about">
@@ -52,7 +76,7 @@
             What is Fountain Prime School? <span>+</span>
           </div>
           <div class="faq-answer">
-            Fountain Prime Schools School is a co- educational institution
+            Fountain Prime School is a co- educational institution
             located in Apa,Badagry West Local government Development Area, Lagos
             State, offering comprehensive education from Nursery through Primary
             to college levels. Our school is dedicated to nurturing young minds
@@ -119,7 +143,7 @@
       </div>
     </section>
 
-    <div id="results">
+    <!--<div id="results">
       <h2>Result Checker</h2>
       <p>Select your class to view Result</p>
       <section class="class">
@@ -232,7 +256,7 @@
           >
         </button>
       </section>
-    </div>
+    </div>-->
 
     <!-- Project Team -->
     <section id="team">
@@ -343,5 +367,40 @@
       <p>&copy; 2023 Our School. All rights reserved.</p>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+      let currentVersion = null;
+
+      function checkForUpdate() {
+        fetch('js-version.php?ts=' + Date.now())
+          .then(res => res.json())
+          .then(serverData => {
+            const serverVersion = serverData.version.toString();
+            console.log("Checking JS version. Current:", currentVersion, "Server:", serverVersion);
+    
+            if (currentVersion && serverVersion !== currentVersion) {
+              console.log("🔁 JS version changed. Reloading...");
+              location.reload(true);
+            } else if (!currentVersion) {
+              currentVersion = serverVersion;
+              console.log("Initial JS version set to:", currentVersion);
+            }
+          })
+          .catch(err => console.error('⚠️ Version check failed', err));
+      }
+    
+      // Run check every 10 seconds
+      setInterval(checkForUpdate, 10000);
+    
+      // Run check whenever tab becomes active again (esp. on mobile)
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") {
+          console.log("Tab active — checking version again.");
+          checkForUpdate();
+        }
+      });
+    
+      // Initial check on page load
+      checkForUpdate();
+    </script>
   </body>
 </html>

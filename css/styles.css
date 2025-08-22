@@ -69,6 +69,19 @@ p {
     margin:10px 0;
 }
 
+.admission p {
+    text-align: justify;
+    line-height: 30px;
+    margin: 0px 50px;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.admission a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
 .submenu li {
     margin: 0;
 }
