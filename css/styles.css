@@ -77,10 +77,6 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
-.admission a {
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-}
 
 .submenu li {
     margin: 0;
@@ -216,6 +212,32 @@ p {
     background-color: #039dfc;
     border-color: #fc037b;
     border-radius: 5px;
+}
+.admit {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #039dfc;
+    border: solid 2px;
+    border-color: #fc037b;
+    border-radius: 5px;
+}
+.admit button {
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.admit a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #039dfc;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 200%;
 }
 
 .burger div {
